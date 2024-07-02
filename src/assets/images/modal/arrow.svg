@@ -1,0 +1,14 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="80px" height="60px" viewBox="0 0 80 60">
+<defs>
+<path id="modal_arrow" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" fill="none" d="
+M 29.75 55
+L 4.9 30 29.75 5.15
+M 4.9 30
+L 78.05 30"/>
+</defs>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#modal_arrow"/>
+</g>
+</svg>

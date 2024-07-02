@@ -1,0 +1,69 @@
+
+.footer { position: fixed; z-index: 1; bottom: -150px; width: 100vw; height: 150px; opacity: 1; transition: all 0.5s; }
+.footer.expand { bottom: 0px!important; }
+.footer.hide { bottom: -170px; opacity: 0; }
+
+.footer-expand { padding: 12px 18px; height: calc(100% - 24px); background-color: #DBDBDB; flex-direction: column; transition: all 0.5s; position: relative;}
+.footer-expand .footer-expand-wrapper {width: 100%; max-width: 1380px;}
+.footer-expand .expand-title {font-family: 'Roboto-bold'; font-size: 28px; margin-bottom: 10px; text-align: left;}
+.footer-expand .expand-bottom {display: flex; align-items: center;}
+.footer-expand .expand-bottom .expand-icons {display: flex; align-items: center;}
+.footer-expand .expand-bottom .expand-icons svg {height: 30px; width: auto; cursor: pointer; margin: 0px 10px; transition: all 0.3s;}
+.footer-expand .expand-bottom .expand-icons .expand-icon:first-child svg {margin-left: 0;}
+.footer-expand .expand-bottom .expand-icons .expand-icon:last-child svg {height: 15px; cursor: default; margin-left: 20px;}
+.footer-expand .expand-bottom .icon-label {font-family: 'Roboto-bold'; font-size: 18px;}
+.footer-expand .expand-bottom .expand-icons .expand-icon:hover svg {transform: scale(1.15);}
+
+.footer-expand .expand-arrow {position: absolute; right: 0; top: -35px; height: 35px; width: 30px; background-color: #DBDBDB; cursor: pointer;}
+.footer-expand .expand-arrow svg { margin: 7px; width: 16px; height: auto; transform: rotate(180deg); transition: all 0.5s;}
+.footer.expand .expand-arrow svg {transform: translateY(-100px); transform: rotate(0deg);}
+
+.footer-inner-wrapper { width: 100%; display: flex; align-items: center; margin-top: 16px;  max-width: 1380px;}
+.footer-inner-wrapper * { font-family: 'Roboto-light'; font-size: 16px; }
+.footer-inner-wrapper .mitsubishi-label {flex: 1; text-align: left;font-weight: 300; color: #333;}
+.footer-inner-wrapper .right-part {display: flex;}
+.footer-inner-wrapper .right-part .right-item {padding: 0px 10px; border-right: 1px solid; cursor: pointer;}
+.footer-inner-wrapper .right-part .right-item:last-child {border-right: none;}
+
+.footer .sound-outer {position: absolute; left: 20px; top: -55px; width: 200px; height: 60px; overflow: hidden;}
+.footer .sound-wrapper { width: 40px; height: 40px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.7); cursor: pointer; z-index: 1;}
+.footer .sound-wrapper .circle-icon {width: 30px; height: 30px;}
+.footer .sound-wrapper .circle-icon .speak-svg #speaker_path_wave { opacity: 1;}
+.footer .sound-wrapper .circle-icon .speak-svg #speaker_path_mute { opacity: 0;}
+.footer .sound-wrapper .circle-icon .speak-svg.mute #speaker_path_wave { opacity: 0;}
+.footer .sound-wrapper .circle-icon .speak-svg.mute #speaker_path_mute { opacity: 1;}
+.footer .sound-outer #backVolume { width: 120px; margin-left: 10px; -webkit-appearance: none; position: relative; transition: all 0.5s; background: none; transform: translateX(-100px) scaleX(0.1); opacity: 0;}
+.footer .sound-outer:hover #backVolume {transform: translateX(0) scaleX(1); opacity: 1;}
+
+#backVolume:focus { outline: none; }
+#backVolume:focus::-webkit-slider-thumb { transform: scale(1.2); transition: 0.5s all ease; }
+#backVolume:before { position: absolute; content: ""; width: 50%; height: 6px; background: #EE3333; border-radius: 3px; }
+#backVolume::-webkit-slider-runnable-track { background: #AAAAAA; height: 6px; border-radius: 3px;}
+#backVolume::-webkit-slider-thumb { width: 18px; height: 18px; border-radius: 100%; border: 2px solid white; -webkit-appearance: none; background-color: #FF4444; margin-top: -5px; z-index: 3; position: relative; transition: 0.5s all ease; cursor: pointer;}
+
+/* @media only screen and (max-width: 1280px) {
+	.footer {height: 80px; bottom: -80px;}
+	.footer .sound-outer {left: 0;}
+	.footer .sound-outer #backVolume {transform:none; opacity: 1;}
+	.footer-expand { padding: 5px 10px; height: calc(100% - 10px); flex-direction: row;}
+	.footer-expand .footer-expand-wrapper {margin-bottom: 10px; width: auto;}
+	.footer-expand .expand-title {font-size: 16px;}
+	.footer-expand .expand-bottom .expand-icons svg {height: 20px; margin: 0px 5px;}
+	.footer-expand .expand-bottom .expand-icons .expand-icon:last-child svg {margin-left: 5px; height: 12px;}
+	.footer-expand .expand-bottom .icon-label {font-size: 12px; width: 105px;}
+	.footer-inner-wrapper {margin-top: 0; justify-content:end; width: auto; flex: 1;}
+	.footer-inner-wrapper .mitsubishi-label { position: absolute; left: 5px; bottom: 5px; font-size: 10px;}
+	.footer-inner-wrapper .right-part .right-item { font-size: 13px; padding: 0px 6px;}
+} */
+
+.mobile .footer {height: 80px; bottom: -80px;}
+.mobile .footer .sound-outer {left: 0;}
+.mobile .footer .sound-outer #backVolume {transform:none; opacity: 1;}
+.mobile .footer-expand { padding: 5px 10px; height: calc(100% - 10px);} 
+.mobile .footer-expand .expand-title {font-size: 16px;}
+.mobile .footer-expand .expand-bottom .expand-icons svg {height: 20px; margin: 0px 5px;}
+.mobile .footer-expand .expand-bottom .expand-icons .expand-icon:last-child svg {margin-left: 5px; height: 12px;}
+.mobile .footer-expand .expand-bottom .icon-label {font-size: 12px;}
+.mobile .footer-inner-wrapper {margin-top: 4px;}
+.mobile .footer-inner-wrapper .mitsubishi-label { font-size: 10px;}
+.mobile .footer-inner-wrapper .right-part .right-item { font-size: 13px; padding: 0px 6px;}

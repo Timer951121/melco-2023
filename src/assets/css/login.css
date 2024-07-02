@@ -1,0 +1,96 @@
+
+.login { background-image: url('../images/login/back.jpg'); background-color: #000000; background-size: auto; transition: all 1s;}
+.login.zoom-back {transform: scale(1.5);}
+.login .back-board {background-color: rgba(0, 0, 0, 0.6); opacity: 1; transition: all 1s;}
+.login .back-board.no-trans {opacity: 0;}
+.login .login-wrapper { position: relative; padding: 35px; background-color: white; max-height: calc(100vh - 40px); flex-direction: column; z-index: 1;}
+.login .login-wrapper.loginForm { width: 430px; height: 280px; }
+.login .login-wrapper.signupForm { width: 790px; height: 650px; }
+
+.login-wrapper .login-logo { width: 250px; flex: 1;}
+.login-wrapper .login-logo img { width: 100%;}
+.login-wrapper .grey-line { width: 72%; margin-bottom: 15px;} /* border-bottom: 1px solid #E6E6E6; */
+.login-wrapper .form-title { font-family:Roboto-bold; font-size: 20px; margin-bottom: 10px;}
+.login-wrapper .form-title div { margin: 5px 0px;}
+.login-wrapper .form-title div .link { cursor: pointer; color: blue;}
+
+.login-wrapper .input-wrapper {flex-direction: column; width: 100%;}
+.login-wrapper input { background-color: white; border: 1px solid #525047; padding: 16px 18px; font-family: 'Roboto-regular'; font-size: 16px;}
+
+.login-wrapper.loginForm .input-login {width: calc(100% - 70px); display: flex;}
+.login-wrapper.loginForm .input-login input {flex: 1; display: flex;}
+.login-wrapper.loginForm .bottom-policy {margin-top: 15px; font-size: 12px;}
+.login-wrapper.loginForm .bottom-policy label {color: blue; cursor: pointer; font-size: 12px;}
+.login-wrapper .button.black {background-color: black; color: white; transition: all 0.2s;}
+.login-wrapper .button.black:hover {background-color: #666666; color: white;}
+
+.login-wrapper.signupForm .input-wrapper {margin-bottom: 20px;}
+.login-wrapper.signupForm .input-wrapper input {font-family: 'Segoe-regular'; font-size: 16px;}
+
+.login-wrapper .icon-button {border: none;}
+
+/* .login-wrapper .input-wrapper .email-input { width: 600px;} */
+
+.login-wrapper .input-wrapper .sign-row {display: flex; justify-content: center; margin: 10px 0px; width: 100%;}
+.login-wrapper .input-wrapper .sign-row input {margin: 0px 10px; flex: 1;}
+.login-wrapper .input-wrapper .sign-row .opt-item {margin: 0px 10px; flex: 1; padding: 16px 18px; display: flex; align-items: center; }
+.login-wrapper .input-wrapper .sign-row .opt-item * {cursor: pointer;}
+.login-wrapper .input-wrapper .sign-row .opt-item .check-wrapper {width: 23px; height: 23px; border: 1px solid; margin-right: 8px;}
+.login-wrapper .input-wrapper .sign-row .opt-item .check-wrapper svg {width: 100%; height: 100%;}
+.login-wrapper .input-wrapper .sign-row .opt-item .check-wrapper.checked {background-color: red;}
+.login-wrapper .input-wrapper .sign-row .opt-item label {font-family: 'Segoe-regular'; font-size: 16px;}
+
+.login-wrapper .input-wrapper .sign-row select {width: calc(50% - 20px); margin: 0px 10px; padding: 0px 10px; font-family: 'Segoe-regular'; font-size: 16px; height: 50px;}
+
+.login-wrapper .signup-button {width: 170px;}
+
+.agree-wrapper {text-align: left; margin-left: 5px; margin-top: 10px; display: flex;}
+.agree-wrapper .input-part {justify-content: flex-start; font-size: 14px;}
+.agree-wrapper .input-part input {width: 18px; height: 18px; margin-right: 10px;}
+.agree-wrapper .label-part {margin-left: 10px; margin-top: 5px; line-height: 20px; font-size: 14px;}
+.agree-wrapper .label-part label {color: blue; cursor: pointer;}
+
+.password.back-board.active {z-index: 2; background-color: white;}
+.password-wrapper {width: 500px; flex-direction: column;}
+.password-wrapper * {font-size: 24px; font-weight: 700;}
+.password-wrapper .input-row input {flex: 1; letter-spacing: 2px; padding: 5px; margin-top: 5px; margin-left: 15px;}
+.password-wrapper .button-row {margin-top: 40px;}
+.password-wrapper .button-row .button {padding: 10px 40px; border: 1px solid; border-radius: 5px;}
+
+/* .login .first-video {position: absolute; bottom: 0; right: 0;} */
+.login .video-wrapper {position: relative; width: 40vw; max-width: 960px;}
+.login .first-video video {width: 100%;}
+
+/* @media only screen and (max-width: 1280px) {
+	.login {background-size: contain;}
+	.login .login-wrapper.loginForm { padding: 20px; }
+	.login .login-wrapper.signupForm { width: 100vw; height: 100vh; padding: 0; }
+	.login .login-wrapper.signupForm .input-wrapper {margin-bottom: 10px; padding: 0px 20px; width: calc(100% - 40px); flex: 1;}
+	.login-wrapper .input-wrapper .sign-row {margin: 5px 0px;}
+	.login-wrapper .input-wrapper .sign-row input {width: 100px; padding: 2px 12px;}
+	.login-wrapper .input-wrapper .sign-row .opt-item { padding: 2px 8px;}
+	.login-wrapper .input-wrapper .sign-row .opt-item .check-wrapper {width: 18px; height: 18px;}
+
+	.login-wrapper.signupForm .login-logo {width: 180px; flex: none; margin-top: 10px;}
+	.login-wrapper .grey-line {margin-bottom: 10px; display: none;}
+	.login-wrapper .form-title {font-size: 14px; margin-bottom: 0px; display: none;}
+
+	.login-wrapper.signupForm .button.signup-button {margin-bottom: 10px; padding: 7px; width: 100px; position: absolute; top: 30px; right: 20px;}
+	.login-wrapper.loginForm .input-wrapper {flex: 1;}
+} */
+
+.mobile .login {background-size: contain;}
+.mobile .login .login-wrapper.loginForm { padding: 20px; }
+.mobile .login .login-wrapper.signupForm { width: 100vw; height: 100vh; padding: 0; }
+.mobile .login .login-wrapper.signupForm .input-wrapper {margin-bottom: 10px; padding: 0px 20px; width: calc(100% - 40px); flex: 1; max-height: calc(100vh - 160px); overflow-y: auto; justify-content: flex-start;}
+.mobile .login-wrapper .input-wrapper .sign-row {margin: 5px 0px;}
+.mobile .login-wrapper .input-wrapper .sign-row input {width: 100px; padding: 2px 12px;}
+.mobile .login-wrapper .input-wrapper .sign-row .opt-item { padding: 2px 8px;}
+.mobile .login-wrapper .input-wrapper .sign-row .opt-item .check-wrapper {width: 18px; height: 18px;}
+
+.mobile .login-wrapper.signupForm .login-logo {width: 180px; flex: none; margin-top: 10px;}
+.mobile .login-wrapper .grey-line {margin-bottom: 10px; display: none;}
+.mobile .login-wrapper .form-title {font-size: 14px; margin-bottom: 0px; display: none;}
+
+.mobile .login-wrapper.signupForm .button.signup-button {margin-bottom: 10px; padding: 7px; width: 100px; position: absolute; top: 30px; right: 20px;}
+.mobile .login-wrapper.loginForm .input-wrapper {flex: 1;}

@@ -1,0 +1,48 @@
+.guide-tour {
+	/* background-image: url('../images/guide/back.jpg'); */
+	display: flex;
+	justify-content: center;
+}
+.guide-tour.back-board.active{
+	z-index: 3;
+}
+
+.guide-tour .side-menu { position: absolute;	left: -270px; top: calc(50vh - 200px); opacity: 0; transition: all 0.5s;}
+.guide-tour .side-menu.active {left: 0; opacity: 1;}
+
+.guide-tour .side-menu .button { font-size: 16px; height: 40px; width: 160px; }
+.guide-tour .side-menu .place-menu {padding: 15px 20px; background-color: rgba(222, 223, 221, 0.8); border: 1px solid #525047;}
+.guide-tour .side-menu .place-menu .button {margin: 16px 0px; justify-content: flex-start; padding-left: 30px;}
+.guide-tour .side-menu .place-menu .button:hover {background-color: #9A9388;}
+
+.guide-tour .side-menu .control-menu {margin-top: 18px; padding-left: 15px;}
+.guide-tour .side-menu .control-menu .button {background-color: #9A9388; color: white; margin: 4px;}
+.guide-tour .side-menu .control-menu .button:hover {background-color: #525047;}
+
+.guide-tour .icon-group { display: flex; margin-top: -100px; opacity: 0; transition: all 0.5s;}
+.guide-tour .icon-group.active { margin-top: 28vh; opacity: 1;}
+.guide-tour .icon-group .icon-item { display: flex; flex-direction: column; align-items: center;}
+.guide-tour .icon-group .icon-item label {font-size: 32px; margin-bottom: 10px; font-size: 32px; margin-bottom: 5px; color: #3C4751;}
+.guide-tour .icon-group .icon-wrapper { height: 98px; width: 98px; position: relative; margin: 0px 24px;}
+.guide-tour .icon-group .icon-inner { height: 100%; width: 100%; position: absolute; top: 0; left: 0;}
+.guide-tour .icon-group .icon-inner img { height: 100%; width: 100%; }
+
+.guide-tour .icon-group .icon-inner.arrow-icon.animate img { transition: transform 0.5s; }
+.guide-tour .icon-group .icon-inner.arrow-icon.rotate img { transform: rotate(180deg); }
+
+.guide-tour .icon-group .icon-inner.scale-icon img { transform: scale(0.7); transition: transform 0.5s;}
+.guide-tour .icon-group .icon-inner.scale-icon.active img { transform: scale(0.85); }
+
+.guide-explore .pan-board { position: absolute; right: 12px; bottom: -500px; width: 360px; height: 480px; background-color: black; opacity: 0; transition: all 0.3s; }
+.guide-explore .pan-board.active { bottom: 12px; opacity: 1; }
+.guide-explore .pan-board .pan-bottom { position: absolute;  bottom: 12px; display: flex; justify-content: center; width: 100%;}
+.guide-explore .pan-board .pan-icon { width: 40px; height: 40px; border-radius: 50%; background-color: white; display: flex; justify-content: center; align-items: center; margin: 0px 8px; cursor: pointer;}
+.guide-explore .pan-board .pan-icon svg {transform: scale(0.75);}
+
+.guide-explore .pan-board .pan-icon .slash-video {display: none;}
+.guide-explore .pan-board .pan-icon .slash-sound {display: none;}
+.guide-explore .pan-board .pan-icon.disable-video .slash-video {display: block;}
+.guide-explore .pan-board .pan-icon.disable-sound .slash-sound {display: block;}
+
+.guide-explore .pan-button { position: absolute; left: calc(50% - 50px); bottom: 12px; background-color: #525047; border-radius: 4px; color: white; padding: 8px 30px; cursor: pointer;}
+.guide-explore .pan-button:hover { background-color: #9A9388; }
